@@ -1,0 +1,262 @@
+:root {
+    --backgroundColor: #f5f4fa;
+    --sectionColor: #f58686;
+    --textNormalColor: #2B2D42;
+    --textShinyColor: #f58686;
+    --textWhiteColor: #f9f4ea;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--backgroundColor);
+    color: var(--textNormalColor);
+}
+
+.nav-container {
+    margin: 30px 0;
+}
+.logo-container img {
+    width: 10rem;
+}
+.nav-container li {
+    list-style: none;
+}
+.nav-item {
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    margin: 0 10px;
+    text-decoration: none;
+    color: var(--textNormalColor);
+}
+.nav-item:hover {
+    color: var(--textShinyColor);
+    transform: scale(1.15);
+}
+.presentation-text {
+    width: 40%;
+}
+
+.avatar {
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+}
+
+.redes-container {
+    list-style: none;
+    padding: 0;
+}
+.redes img {
+    width: 8rem;
+    margin: 0 1rem 0 0;
+    cursor: pointer;
+}
+
+.about-me {
+    background-color: var(--sectionColor);
+}
+
+.about-me-text {
+    margin: auto;
+}
+
+.firme {
+    margin: 2% 0 0 20%;
+}
+.icon {
+    width: 10rem;
+}
+
+.academic-formation {
+    background-color: var(--sectionColor);
+}
+
+.exp-description button{
+    border: none;
+    padding: 8px;
+    width: 100px;
+    margin: 0 0 10px 0;
+    background-color: var(--textShinyColor);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+.exp-description a {
+    text-decoration: none;
+}
+
+.exp-description button:hover {
+        background-color: #2B2D42;
+        transform: scale(1.03);
+        color: var(--textWhiteColor);
+}
+.exp-item img {
+    height: 30rem;
+    border: var(--sectionColor) 2px solid;
+}
+
+.contact {
+    background-color: var(--sectionColor);
+}
+
+.contact-image {
+    width: 450px;
+    height: 600px;
+}
+.contact-text{
+    margin: 0 0 0 20px;
+}
+.contact-text h2 {
+    font-size: 60px;
+    margin:  0 0 -10px 0;
+}
+.contact-text p {
+    line-height: 20px;
+}
+input, textarea {
+    width: 30vw;
+    padding: 13px;
+    margin: 18px 0;
+    color: var(--sectionColor);
+    border: none;
+    resize: none;
+    border: var(--textNormalColor) 0px solid;
+    transition: all 0.06s ease-in-out;
+}
+
+input:hover, textarea:hover {
+    border: var(--textNormalColor) 2px solid;
+}
+
+input::placeholder, textarea::placeholder {
+    color: var(--sectionColor);
+    opacity: 0.7;
+}
+
+input:nth-child(5) {
+    width: 150px;
+    transition: all 0.15s ease-in-out;
+    cursor: pointer;
+}
+
+
+
+input:nth-child(5):hover {
+    background-color: #2B2D42;
+    transform: scale(1.03);
+    color: var(--textWhiteColor);
+}
+
+/*Texts*/
+.main-tittle {
+    font-family: "Reem Kufi", sans-serif;
+    font-size: 34px;
+}
+
+.secondary-tittle {
+    font-family: "Reem Kufi", sans-serif;
+    font-size: 24px;
+}
+.third-tittle {
+    font-family: "Reem Kufi", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.regular-text {
+    font-family: "Zilla Slasb", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    list-style: none;
+}
+
+.strong {
+    font-weight: 700;
+}
+
+.shinyText {
+    color: var(--textShinyColor);
+}
+
+.whiteText {
+    color: var(--textWhiteColor);
+}
+
+
+
+
+/*FlexBox*/
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.flex-s-arround {
+    display: flex;
+    justify-content: space-around;
+}
+.flex-s-between {
+    justify-content: space-between;
+}
+
+.flex-start {
+    display: flex;
+    justify-content: start;
+}
+
+.flex-end {
+    display: flex;
+    justify-content: end;
+}
+
+.f-column {
+    flex-direction: column;
+}
+
+.f-r-reverse {
+    flex-direction: row-reverse;
+}
+
+.f-wrap {
+    flex-wrap: wrap;
+}
+
+.block {
+    display: block;
+}
+
+/*Pocisiones*/
+.center-item {
+    margin: auto;
+}
+
+/*Separadores*/
+
+.separator {
+    padding: 40px 0;
+    margin: 30px auto;
+}
+.separator-small {
+    padding: 20px 0;
+    margin: 15px auto;
+
+}
+
+/*Tamaños*/
+.width-big {
+    width: 60%;
+}
+.width-bigger {
+    width: 80%;
+}
+.margin-none {
+    margin: 0;
+}
