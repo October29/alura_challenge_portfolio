@@ -67,6 +67,7 @@ body {
 }
 
 .firme {
+    width: 7rem;
     margin: 2% 0 0 20%;
 }
 .icon {
@@ -344,7 +345,13 @@ input:nth-child(5):hover {
         width: 100vw;
         margin: -5vh 0 0 0;
     }
-    
+    .width-big {
+        width: 80%;
+        padding: 0 2rem;
+    }
+    .firme {
+        margin: 0 2rem;
+    }
     .skills-container {
         width: 100vw;
         display: flex;
@@ -353,12 +360,15 @@ input:nth-child(5):hover {
     .skill img {
         width: 6rem;
     }
+    .skills-container {
+        width: 80vw;
+    }
     .hobbie img {
         width: 6rem;
     }
     .hobbie-container {
-        width: 100vw;
-        margin: 0;
+        width: 80vw;
+        margin: 0 auto;
         padding: 0;
     }
     .academic-formation {
