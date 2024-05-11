@@ -30,7 +30,7 @@ function recorrerMenu(event) {
 window.addEventListener('resize', function() {
     const anchoVentana = window.innerWidth;
 
-    if (anchoVentana <= 630) {
+    if (anchoVentana <= 730) {
         fSection.classList.remove('flex-s-arround', 'width-big', 'center-item');
         console.log('negro');
     } else {

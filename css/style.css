@@ -265,7 +265,7 @@ input:nth-child(5):hover {
 }
 
 /*mobile*/
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 530px) {
     .nav-container {
         justify-content: space-between;
         flex-wrap: wrap;
