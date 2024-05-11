@@ -18,6 +18,9 @@ body {
 .nav-container {
     margin: 30px 0;
 }
+.h-menu {
+    display: none;
+}
 .logo-container img {
     width: 10rem;
 }
@@ -259,4 +262,134 @@ input:nth-child(5):hover {
 }
 .margin-none {
     margin: 0;
+}
+
+/*mobile*/
+@media screen and (max-width: 430px) {
+    .nav-container {
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100vw;
+        overflow: hidden;
+    }
+
+    .logo-container img {
+        width: 8rem;
+        margin: 0 0 0 30px;
+    }
+    .nav-menu {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .h-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        margin: 8px -150px 0 0;
+        width: 5rem;
+    }
+    .lineOne, .lineTwo, .lineThree {
+        width: 35px;
+        height: 8px;
+        background-color: var(--sectionColor);
+    }
+    
+    .nav-item_container {
+        position: absolute;
+        top: 11%;
+        left: 0;
+        transform: translate(100vw) scale(0,1);
+        flex-direction: column;
+        gap: 60px;
+        width: 100vw;
+        height: 77vh;
+        margin: 1rem auto;
+        padding: 3rem 0;
+        background-color: var(--sectionColor);
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+    }
+    .navPosition {
+        transform: translate(0vw);
+        opacity: 1;
+    }
+    .nav-item_container li {
+        margin: auto;
+    }
+    .nav-item {
+        font-size: 1.5rem;
+    }
+    .nav-item:hover {
+        color: var(--textWhiteColor);
+        transform: scale(1.15) scale(1,1);
+    }
+    .presentation {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0 0 0 0;
+    }
+    .presentation-text {
+        width: 78vw;
+        padding: 5vw;
+    }
+    .presentation-text h1 {
+        font-size: 1.5rem;
+    }
+    .redes img{
+        width: 5.5rem;
+    }
+    .avatar {
+        border-radius: 0;
+        width: 100vw;
+        margin: -5vh 0 0 0;
+    }
+    
+    .skills-container {
+        width: 100vw;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .skill img {
+        width: 6rem;
+    }
+    .hobbie img {
+        width: 6rem;
+    }
+    .hobbie-container {
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+    }
+    .academic-formation {
+        margin: auto;
+        padding: 1rem ;
+    }
+    .formation-item {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: baseline;
+    }
+    .formation-item h3 {
+        flex-grow: 1;
+    }
+    .exp-item {
+        flex-direction: column;
+    }
+    .exp-item img {
+        width: 100%;
+        height: auto;
+    }
+    .exp-description a {
+        display: inline-block;
+    }
+    input, textarea {
+        width: 90%;
+        padding: 13px;
+        margin: 18px 0;
+    }
+    .contact img {
+        display: none;
+    }
 }
